@@ -1,0 +1,23 @@
+.footer {
+  background: #1E293B;
+  color: #94A3B8;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-redes {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.footer a {
+  color: #F8FAFC;
+  text-decoration: none;
+}
+
+a:hover{
+  background: #F8FAFC;
+  color: #1E293B;
+}
