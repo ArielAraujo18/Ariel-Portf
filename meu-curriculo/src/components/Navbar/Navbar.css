@@ -1,24 +1,36 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   background-color: #1E293B;
-  padding: 2rem 2rem;
-  max-width: 180rem;
+  padding: 2rem;
   color: #F8FAFC;
+  max-width: 180rem;
 }
 
-.navbar-left h1 {
+.navbar-center {
+  grid-column: 2;
+  justify-self: center;
+}
+
+.navbar-center a {
+  text-decoration: none;
+  color: #F8FAFC;
   font-size: 2rem;
   font-family: serif;
   white-space: nowrap;
-  color: #F8FAFC;
-  background-color: #1E293B;
+}
+
+.navbar-center a:hover {
+  text-decoration: underline;
 }
 
 .navbar-right {
+  grid-column: 3;
+  justify-self: end;
   display: flex;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .navbar-right a {
@@ -27,44 +39,40 @@
   font-size: 1rem;
 }
 
-a:hover{
-  background: #F8FAFC;
-  color: #1E293B;
+.navbar-right a:hover {
+  text-decoration: underline;
 }
 
-.navbar-left{
-  display: flex;
-  justify-content: center;
-}
-
-.navbar-left a{
-  text-decoration: none;
-  color: #F8FAFC;
-  font-size: 2rem;
-}
-
-.navbar-left a:hover{
-  background: #F8FAFC;
-  color: #1E293B;
-}
 
 @media (max-width: 500px) {
     .navbar{
         display: block;
-        justify-content: space-between;
         padding: 1rem 1rem;
     }
 
-    .navbar-left{
+    .navbar-center{
         font-size: 1rem;
         font-family: serif;
         padding-bottom: 1rem;
+        grid-column: 1;
+        justify-self: center;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-center a{
+        text-decoration: none;
+        color: #F8FAFC;
+        font-size: 1.4rem;
+        font-weight: 900;
+        margin: auto;
     }
 
     .navbar-right{
+        grid-column: 1;
+        justify-self: center;
         display: flex;
-        gap: 1rem;
-        margin-top: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .navbar-right a{

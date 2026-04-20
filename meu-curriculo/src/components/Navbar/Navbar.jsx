@@ -18,7 +18,7 @@ export function Navbar(){
     
     return(
         <nav className="navbar">
-            <section className="navbar-left">
+            <section className="navbar-center">
                 <Link to="/">
                     {getTitle()}
                 </Link>
@@ -28,6 +28,7 @@ export function Navbar(){
                 <Link to="/projetos">Projetos</Link> <span>|</span>
                 <a href="https://www.linkedin.com/in/ariel-ara%C3%BAjo-935217228/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </section>
+            
         </nav>
     );
 }

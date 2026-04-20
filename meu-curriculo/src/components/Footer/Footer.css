@@ -1,3 +1,7 @@
+span{
+  color: #F8FAFC;
+}
+
 .footer {
   background: #1E293B;
   color: #94A3B8;
@@ -8,8 +12,20 @@
 .footer-redes {
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 1rem;
   margin-top: 0.5rem;
+}
+
+.footer-redes-icons{
+
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-redes img{
+  width: 20px;
+  height: 20px;
 }
 
 .footer a {
@@ -18,6 +34,28 @@
 }
 
 a:hover{
-  background: #F8FAFC;
-  color: #1E293B;
+  text-decoration: underline;
+  background: none;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .footer-redes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-redes-icons {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .footer-redes img {
+    width: 18px;
+    height: 18px;
+  }
 }

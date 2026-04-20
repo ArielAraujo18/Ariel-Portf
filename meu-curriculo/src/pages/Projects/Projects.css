@@ -23,6 +23,7 @@ span{
     margin: 2rem;
     background-color: #1E293B;
     text-decoration: none;
+    border-radius: 15px;
 }
 
 .conteudo:hover{
@@ -48,6 +49,10 @@ span{
     height: auto;
     margin: auto;
     transform: scale(0.80);
+}
+
+.conteudo-imagem img{
+    border-radius: 10px;
 }
 
 .conteudo-autor{
