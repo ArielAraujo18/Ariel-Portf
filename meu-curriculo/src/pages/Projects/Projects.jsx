@@ -70,33 +70,6 @@ export function Projects(){
                 </section>
             </section>
 
-            {/* CONTEÚDO */}
-            <section className="conteudo" on onClick={() => window.open("https://github.com/ArielAraujo18/Bot-Telegram")}>
-                <section className="conteudo-titulo">Automatização do telegram</section>
-                <hr />
-                <section className="conteudo-imagem">
-                    <img src="/Telegram.png" alt="" />
-                </section>
-                <hr />
-                <section className="conteudo-autor">
-                    Autor: Ariel Araújo dos Santos
-                </section>
-                <hr />
-                <section className="conteudo-linguagens">
-                    <span>Linguagens: </span>
-                    <span>Python</span>
-                    <i className="devicon-python-plain"></i>
-                </section>
-                <hr />
-                <section className="conteudo-texto">
-                    <p>
-                        Bot de automação desenvolvido em Python para execução de tarefas no Telegram, com foco em comunicação e envio automatizado de mensagens em grupos.
-                        O sistema realiza integração com APIs externas para captura de dados em tempo real e processamento dessas informações para disparo automático de mensagens.
-                        A aplicação foi projetada para operar de forma contínua, permitindo automação de notificações e envio de informações sem intervenção manual.
-                        O bot utiliza estrutura orientada a eventos, garantindo resposta rápida a novas entradas de dados e execução automatizada das ações definidas.
-                    </p>
-                </section>
-            </section>
 
             {/* CONTEÚDO */}
             <section className="conteudo" on onClick={() => window.open("https://github.com/ArielAraujo18/NodeAPI")}>
@@ -122,6 +95,34 @@ export function Projects(){
                         A aplicação segue arquitetura baseada em endpoints, permitindo criação, leitura, atualização e remoção de dados de forma padronizada.
                         O sistema foi testado utilizando Postman, validando requisições HTTP e respostas da API em diferentes cenários de uso.
                         A API foi construída com foco em organização de rotas, separação de responsabilidades e comunicação eficiente com o banco de dados.
+                    </p>
+                </section>
+            </section>
+
+            {/* CONTEÚDO */}
+            <section className="conteudo" on onClick={() => window.open("https://github.com/ArielAraujo18/Bot-Telegram")}>
+                <section className="conteudo-titulo">Automatização do telegram</section>
+                <hr />
+                <section className="conteudo-imagem">
+                    <img src="/Telegram.png" alt="" />
+                </section>
+                <hr />
+                <section className="conteudo-autor">
+                    Autor: Ariel Araújo dos Santos
+                </section>
+                <hr />
+                <section className="conteudo-linguagens">
+                    <span>Linguagens: </span>
+                    <span>Python</span>
+                    <i className="devicon-python-plain"></i>
+                </section>
+                <hr />
+                <section className="conteudo-texto">
+                    <p>
+                        Bot de automação desenvolvido em Python para execução de tarefas no Telegram, com foco em comunicação e envio automatizado de mensagens em grupos.
+                        O sistema realiza integração com APIs externas para captura de dados em tempo real e processamento dessas informações para disparo automático de mensagens.
+                        A aplicação foi projetada para operar de forma contínua, permitindo automação de notificações e envio de informações sem intervenção manual.
+                        O bot utiliza estrutura orientada a eventos, garantindo resposta rápida a novas entradas de dados e execução automatizada das ações definidas.
                     </p>
                 </section>
             </section>
