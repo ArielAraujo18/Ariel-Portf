@@ -1,23 +1,10 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Footer } from "./components/Footer/Footer";
-import { Main } from "./components/Main/Main";
-import { Projects } from "./pages/Projects/Projects";
-
+import './App.css';
+import Landing from './pages/Landing/Landing'
 function App() {
   return (
-    <BrowserRouter>
-      <div className="app">
-        <Navbar />
-
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/projetos" element={<Projects />} />
-        </Routes>
-
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div className="app">
+      <Landing />
+    </div>
   );
 }
 

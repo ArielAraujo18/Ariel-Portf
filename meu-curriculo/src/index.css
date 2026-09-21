@@ -1,12 +1,104 @@
-html, body, #root{
-  height: 100%;
-  margin: 0;
-  background-color: #0F172A;
-  overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@700;800&display=swap");
+
+@import "tailwindcss";
+@keyframes floatY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
 }
 
-.app{
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.animate-floatY {
+  animation: floatY 3s ease-in-out infinite;
+}
+@keyframes aurora {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(12deg) scale(1.15);
+  }
+}
+
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(40px, -30px) scale(1.12);
+  }
+}
+
+@keyframes blobDelay {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-50px, 35px) scale(1.18);
+  }
+}
+
+@keyframes blobSlow {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-45px) scale(1.1);
+  }
+}
+
+@keyframes particle {
+  0%, 100% {
+    opacity: 0.25;
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-28px) scale(1.4);
+  }
+}
+
+.animate-aurora {
+  animation: aurora 18s ease-in-out infinite;
+}
+
+.animate-blob {
+  animation: blob 10s ease-in-out infinite;
+}
+
+.animate-blobDelay {
+  animation: blobDelay 13s ease-in-out infinite;
+}
+
+.animate-blobSlow {
+  animation: blobSlow 16s ease-in-out infinite;
+}
+
+.animate-particle {
+  animation: particle 4s ease-in-out infinite;
+}
+
+.animate-particleDelay {
+  animation: particle 5s ease-in-out infinite 1.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
